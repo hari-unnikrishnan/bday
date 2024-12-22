@@ -236,3 +236,4 @@ $('document').ready(function(){
 //     const messageDiv = document.querySelector('.message');
 //     messageDiv.style.display = 'block'; // Show the message
 // });
+
