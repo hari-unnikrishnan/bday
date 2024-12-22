@@ -123,11 +123,11 @@ body {
 }
 
 .bulb-holder {
-	height: 100px;
+	height: 70px;
 }
 
 .bulb-glow-yellow {
-	background-image: url('Images\bulb_yellow.png');
+	background-image: url('bulb_yellow.png');
 	-webkit-animation: bulb_glow_yellow linear 5s;
 	-moz-animation: bulb_glow_yellow linear 5s;
 	-o-animation: bulb_glow_yellow linear 5s;
@@ -137,7 +137,7 @@ body {
 
 @-webkit-keyframes bulb_glow_yellow {
 	0%{
-		background-image: url('Images\bulb.png');
+		background-image: url('bulb.png');
 		opacity: 0;
 	}
 	50%{
@@ -226,7 +226,7 @@ body {
 @-moz-keyframes bulb_glow_red {
 	0%{
 		background-image: url('bulb.png');
-		opacity: 0;
+		opacity: 0;/
 	}
 	50%{
 		opacity: 1;
@@ -511,7 +511,7 @@ body {
 
 @-webkit-keyframes bulb_glow_orange {
 	0%{
-		background-image: url('bulb.png');
+		background-image: url('image/bulb.png');
 		opacity: 0;
 	}
 	50%{
@@ -968,8 +968,9 @@ audio {
 	display: none;
 }
 
+
 .bannar {
-	max-width: 49%;
+	max-width: 35%;
 	-webkit-transform:translate(0px,-500px);
 	-moz-transform:translate(0px,-500px);
 	-o-transform:translate(0px,-500px);
@@ -1075,203 +1076,111 @@ audio {
 	}
 }
 
+/* Balloon Styles */
 .balloons {
-	position: fixed;
-	bottom: -200px;
-	opacity: 0.6;
-	z-index: 99;
-	width: 100px;
-	height: 183px;
-	background-repeat: no-repeat no-repeat;
-	background-size: 100px 183px;
+    position: fixed;
+    bottom: -200px;
+    opacity: 0.6;
+    z-index: 99;
+    width: 100px;
+    height: 183px;
+    background-repeat: no-repeat;
+    background-size: 100px 183px;
 }
+
 .balloons h2 {
-	text-transform: uppercase;
-	font-family: 'Signika', sans-serif;
-	font-size: 50px;
-	color: #BF4136;
-	text-shadow: 5px 5px 5px #FFF;
-	display: none;
+    text-transform: uppercase;
+    font-family: 'Signika', sans-serif;
+    font-size: 50px;
+    color: #BF4136;
+    text-shadow: 5px 5px 5px #FFF;
+    display: none;
 }
-#b1,#b11 {
-	background-image: url('b1.png');
+
+/* Individual Balloon Images */
+#b1, #b11 {
+    background-image: url('image/b1.png');
 }
-#b2,#b22 {
-	background-image: url('b2.png');
+#b2, #b22 {
+    background-image: url('image/b2.png');
 }
-#b3,#b33 {
-	background-image: url('b3.png');
+#b3, #b33 {
+    background-image: url('image/b3.png');
 }
-#b4,#b44{
-	background-image: url('b4.png');
+#b4, #b44 {
+    background-image: url('image/b4.png');
 }
-#b5,#b55{
-	background-image: url('b5.png');
+#b5, #b55 {
+    background-image: url('image/b5.png');
 }
-#b6,#b66{
-	background-image: url('b6.png');
+#b6, #b66 {
+    background-image: url('image/b6.png');
 }
-#b7,#b77{
-	background-image: url('b7.png');
+#b7, #b77 {
+    background-image: url('image/b7.png');
 }
+#b8, #b88 {
+    background-image: url('image/b8.png');
+}
+
+/* Rotate Animations */
 .balloons-rotate-behaviour-one {
-	-webkit-animation: balloons_rotate_one linear 10s infinite;
-	-webkit-transform: rotate(30deg);
-	-moz-animation: balloons_rotate_one linear 10s infinite;
-	-moz-transform: rotate(30deg);
-	-o-animation: balloons_rotate_one linear 10s infinite;
-	-o-transform: rotate(30deg);
-	-ms-animation: balloons_rotate_one linear 10s infinite;
-	-ms-transform: rotate(30deg);
-	animation: balloons_rotate_one linear 10s infinite;
-	transform: rotate(30deg);
+    animation: balloons_rotate_one linear 10s infinite;
+    transform: rotate(30deg);
 }
-@-webkit-keyframes balloons_rotate_one {
-	0% {
-		-webkit-transform: rotate(30deg);
-	}
-	50% {
-		-webkit-transform: rotate(-30deg);
-	}
-	100% {
-		-webkit-transform: rotate(30deg);
-	}
-}
-@-moz-keyframes balloons_rotate_one {
-	0% {
-		-moz-transform: rotate(30deg);
-	}
-	50% {
-		-moz-transform: rotate(-30deg);
-	}
-	100% {
-		-moz-transform: rotate(30deg);
-	}
-}
-@-o-keyframes balloons_rotate_one {
-	0% {
-		-o-transform: rotate(30deg);
-	}
-	50% {
-		-o-transform: rotate(-30deg);
-	}
-	100% {
-		-o-transform: rotate(30deg);
-	}
-}
-@-ms-keyframes balloons_rotate_one {
-	0% {
-		-ms-transform: rotate(30deg);
-	}
-	50% {
-		-ms-transform: rotate(-30deg);
-	}
-	100% {
-		-ms-transform: rotate(30deg);
-	}
-}
-@keyframes balloons_rotate_one {
-	0% {
-		transform: rotate(30deg);
-	}
-	50% {
-		transform: rotate(-30deg);
-	}
-	100% {
-		transform: rotate(30deg);
-	}
-}
+
 .balloons-rotate-behaviour-two {
-	-webkit-animation: balloons_rotate_two linear 10s infinite;
-	-webkit-transform: rotate(-20deg);
-	-moz-animation: balloons_rotate_two linear 10s infinite;
-	-moz-transform: rotate(-20deg);
-	-o-animation: balloons_rotate_two linear 10s infinite;
-	-o-transform: rotate(-20deg);
-	-ms-animation: balloons_rotate_two linear 10s infinite;
-	-ms-transform: rotate(-20deg);
-	animation: balloons_rotate_two linear 10s infinite;
-	transform: rotate(-20deg);
-}
-@-webkit-keyframes balloons_rotate_two {
-	0% {
-		-webkit-transform: rotate(-20deg);
-	}
-	50% {
-		-webkit-transform: rotate(20deg);
-	}
-	100% {
-		-webkit-transform: rotate(-20deg);
-	}
-}
-@-moz-keyframes balloons_rotate_two {
-	0% {
-		-moz-transform: rotate(-20deg);
-	}
-	50% {
-		-moz-transform: rotate(20deg);
-	}
-	100% {
-		-moz-transform: rotate(-20deg);
-	}
-}
-@-o-keyframes balloons_rotate_two {
-	0% {
-		-o-transform: rotate(-20deg);
-	}
-	50% {
-		-o-transform: rotate(20deg);
-	}
-	100% {
-		-o-transform: rotate(-20deg);
-	}
-}
-@-ms-keyframes balloons_rotate_two {
-	0% {
-		-ms-transform: rotate(-20deg);
-	}
-	50% {
-		-ms-transform: rotate(20deg);
-	}
-	100% {
-		-ms-transform: rotate(-20deg);
-	}
-}
-@keyframes balloons_rotate_two {
-	0% {
-		transform: rotate(-20deg);
-	}
-	50% {
-		transform: rotate(20deg);
-	}
-	100% {
-		transform: rotate(-20deg);
-	}
+    animation: balloons_rotate_two linear 10s infinite;
+    transform: rotate(-20deg);
 }
 
-@keyframes spin {
+/* Keyframes for Rotation */
+@keyframes balloons_rotate_one {
     0% {
-        transform: rotateZ(0);
+        transform: rotate(30deg);
     }
-
-    25% {
-        transform: rotateZ(10deg);
-    }
-
     50% {
-        transform: rotateZ(0deg);
+        transform: rotate(-30deg);
     }
-
-    75% {
-        transform: rotateZ(-10deg);
+    100% {
+        transform: rotate(30deg);
     }
 }
 
-.type-wrap {
-    font-size: 25px;
-    color: #C4515C;
-
+@keyframes balloons_rotate_two {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
 }
+
+
+
+/* 
+.balloons-rotate-behaviour-two {
+    animation: rotateTwo 3s infinite linear;
+}
+
+@keyframes rotateTwo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} */
+
+
+
+
+
+
+
+
+
+
+
 
 .balloon-border{
 	position: fixed;
@@ -1279,6 +1188,18 @@ audio {
 	opacity: 0.5;
 	z-index: 9999;
 }
+.type-wrap {
+    font-size: 25px;
+    color: #C4515C;
+
+}
+
+/* .balloon-border{
+	position: fixed;
+	top:100%;
+	opacity: 0.5;
+	z-index: 9999;
+} */
 .control-panel {
 	position: fixed;
 	bottom: 0;
@@ -1340,7 +1261,7 @@ audio {
         font-family: 'Arial', sans-serif;
         background: linear-gradient(120deg, #ff9a9e, #fad0c4);
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 17px;
         color: #4d4d4d;
         text-align: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -1388,3 +1309,9 @@ audio {
 		color: #ffd700;
 	}
     
+
+
+	h4{
+		margin-top: 46px;
+    	margin-bottom: 10px;
+	}
